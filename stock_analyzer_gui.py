@@ -35,7 +35,6 @@ def retry_yfinance(max_retries=MAX_RETRIES, delay=RETRY_DELAY):
 
     return decorator
 
-
 # ---- Data Fetching with Retries ----
 @st.cache_data
 @retry_yfinance()
