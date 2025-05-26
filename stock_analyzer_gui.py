@@ -53,7 +53,6 @@ def fetch_stock_data(ticker):
     except Exception as e:
         raise RuntimeError(f"Yahoo Finance error for {ticker}: {str(e)}")
 
-
 # ---- Save/Load Fed Settings ----
 def save_fed_settings(settings):
     with open(SAVE_FILE, "w") as f:
